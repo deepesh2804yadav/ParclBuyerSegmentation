@@ -1,0 +1,67 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# .gitignore — Parcl Buyer Segmentation Project
+# ══════════════════════════════════════════════════════════════════════════════
+
+# ── Python ─────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# ── Virtual environments ───────────────────────────────────────────────────────
+venv/
+env/
+.env/
+.venv/
+ENV/
+
+# ── Environment variables ──────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ── Generated data files ───────────────────────────────────────────────────────
+# Commit .gitkeep placeholders; exclude large CSV outputs
+data/raw/*.csv
+data/processed/*.csv
+
+# ── Trained model artifacts ────────────────────────────────────────────────────
+# Regenerate via: python model_pipeline.py
+models/*.joblib
+
+# ── Jupyter / IPython ──────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── OS artefacts ───────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ── IDE / editor ──────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Streamlit cache ────────────────────────────────────────────────────────────
+.streamlit/
+
+# ── Distribution / packaging ──────────────────────────────────────────────────
+dist/
+build/
+*.egg-info/
+*.egg
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
